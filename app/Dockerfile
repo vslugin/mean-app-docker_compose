@@ -18,10 +18,6 @@ RUN apt-get update \
 # add user and startup script
 RUN adduser $USER --disabled-password
 
-# install modules with npm
-RUN cd /home/ubuntu/app \
-	&& npm install
-
 COPY startup.sh $HOME
 
 # set default cmd
