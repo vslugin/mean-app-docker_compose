@@ -1,0 +1,22 @@
+doctype html
+html(ng-app="myApp")
+  head
+    title= title
+    meta(name='viewport', content='with=device-with, initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+  body
+    block content
+        div(ng-view)
+    script(src='/angular/angular.min.js')
+    script(src='/angular/angular-route.min.js')
+    script(src='/javascripts/jquery-3.3.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/app.js')
+    script(src='/list/listController.js')
+    script(src='/add/addController.js')
+    script(src='/edit/editController.js')
+    script(src='/login/loginController.js')
+    script(src='/logout/logoutController.js')
+    //script(src='/index/listController.js')
+    //script(src='/page1/page1Controller.js')

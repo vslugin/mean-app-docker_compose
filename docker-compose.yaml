@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mongo:
+    build: ./mongo
+    restart: always
+  web:
+    build: ./app
+    restart: always
+    volumes:
+      - ./app/mean_app:/home/ubuntu/app
+    ports:
+      - 3000:3000

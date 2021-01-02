@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+  div.container
+
+      h1= title
+      a.btn.btn-info(href='/admin/news') Назад
+
+      form
+          .form-group
+              label(for='title') Title
+              input.form-control(id='title', type='text')
+
+          .form-group
+              label(for='body') Body
+              textarea.form-control(id='body')
+
+              input.form-control(id='id', type='hidden')
+
+          button.btn.btn-primary(type='button' id='edit-news-button') Изменить
